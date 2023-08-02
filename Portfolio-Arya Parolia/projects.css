@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@1,300&family=Source+Code+Pro&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+  
+body{
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+body:after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+}
+.bg {
+  background-image: url(img/space.png);
+  height: 100vh;
+  width: 100%;
+}
+
+.first{
+  background-image: url(img/keylogger_back.png);
+}
+
+.first.background-image{
+  height: 100vh;
+}
+.second {
+  background-image: url(img/netflix_back.png);
+}
+
+.third{
+  background-image: url(img/e-commerce_back.png);
+}
+
+.fourth{
+  background-image: url(img/Stock_back.png);
+  align-items: center;
+}
+
+
+.fifth{
+  background-image: url(img/brain.png);
+}
+body:after {
+  content: "";
+  position: fixed;
+  top: 0; bottom: 0; left: 0; right: 0; 
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.proj {
+    height: 519px;
+    color: white;
+}
+
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.15); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.75s; /* 0.5 second transition effect to slide in the sidebar */
+    backdrop-filter: blur(9px) saturate(1.8);
+    z-index: 2;
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.1s;
+    z-index: 2;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+    background-color: black;
+    font-size: xx-large;
+    z-index: 2;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    z-index: 2;
+  }
+  
+  .sidebar .closebtn:hover{
+    color: black;
+    background: transparent;
+    z-index: 2;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    z-index: 2;
+  }
+  
+  .openbtn:hover {
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    z-index: 2;
+  }
+  
+  .buttons button{
+    margin-top: 20px;
+    padding: 9px;
+    border-radius: 22px;
+    color: white;
+    background-color: black;
+    font-size: 13px;
+    margin: 0px 5px;
+    cursor: pointer;
+  }
+  
+  .buttons button:hover{
+    background-color: black;
+    color: white;
+    font-size:large;
+  }
+  
+  .button-85 {
+    padding: 0.9em 3em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    justify-content: center;
+    margin: 1em;
+  }
+  .button-85:hover{
+    transform: scale(1.05);
+  }
+  
+  .button-85:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    background-color: transparent;
+    overflow: hidden;
+    ;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: black;
+    color: white;
+  }
+  
+  button{
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+  }
+
+  .footer{
+    box-shadow: -5px 2px 18px 4px black;
+    color: rgb(91, 6, 112);
+    padding: 1rem;
+    background-color: #262323;
+  }
+  .footer-wrapper {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    gap: 1rem;
+    color: #f1f1f1;
+  }
+  
+  .text-footer {
+    font-size: .8rem;
+  }
+
+.projects{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+    width: 100%;
+}
+
+#projects>.title{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: var(--font-family-primary);
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.project-wrapper{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card{
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card{
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.proj-card{
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+
+.info{
+  flex-basis: 50%;
+}
+
+.inf {
+  flex-basis: 50%;
+  width: 90vw;
+  margin-right: -84px;
+}
+
+.type{
+  text-align: left;
+  font-size: 1.2rem;
+  color: white;
+  transition: .4s;
+
+}
+
+#prjct-title {
+  text-align: left;
+  padding: 1rem 0;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  font-weight:bold;
+  position: relative;
+  color: white;
+}
+
+.p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: white;
+}
+
+#tech {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+#tech>p {
+  backdrop-filter: blur(10px);
+  padding: 0.2rem 0.5rem;
+  width: fit-content;
+  font-size: 1rem;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  transition: .4s;
+}
+
+#description{
+  padding: 1rem 0;
+  text-align: left;
+  font-family: var(--font-family-primary);
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+#ription{
+  padding: 1rem 0;
+  text-align: left;
+  font-family: var(--font-family-primary);
+  font-size: 1.5rem;
+  color: white;
+}
+
+#links{
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.a{
+  height: fit-content;
+  width: fit-content;
+  text-decoration: none;
+  color:white;
+}
+
+#links>a>i {
+  font-size: 1.5rem;
+  color:rgb(236, 103, 236);
+}
+
+#links>a>i:hover {
+  color: white;
+  cursor:crosshair;
+}
+
+
+.fa {
+  display: inline-block;
+  font: 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.display{
+  text-align: center;
+  flex-basis: 30%;
+}
+
+.dis{
+  width: 50%;
+}
+
+.dis:hover {
+  transform: scale(1.02);
+}
